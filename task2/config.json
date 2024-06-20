@@ -1,0 +1,152 @@
+[
+    {
+        "id": "parameters_1_swin",
+        "dataset": "CIFAR100",
+        "augment": true,
+        
+        "model": "Swin_T",
+        "pretrained": true,
+        "optimizer": "Adam",
+        "loss_f": "cross_entropy",
+
+        "batch_size": 32,
+        "lr_head": 0.01,
+        "train_backbone": false,
+        "lr_backbone": 0.001,
+        "step_size": 5,
+        "gamma": 0.316,
+        "weight_decay": 0.001,  
+
+        "epochs": 15,
+        "num_classes": 100,
+        "hidden_dim": 4096,
+
+        "save_dir": "swin/parameters_1",
+        "load_dir": ""
+    },
+    {
+        "id": "parameters_1_res",
+        "dataset": "CIFAR100",
+        "augment": true,
+
+        "model": "ResNet34",
+        "pretrained": true,
+        "optimizer": "Adam",
+        "loss_f": "cross_entropy",
+
+        "batch_size": 32,
+        "lr_head": 0.01,
+        "train_backbone": false,
+        "lr_backbone": 0.001,
+        "step_size": 5,
+        "gamma": 0.316,
+        "weight_decay": 0.001,  
+
+        "epochs": 15,
+        "num_classes": 100,
+        "hidden_dim": 4096,
+
+        "save_dir": "res/parameters_1",
+        "load_dir": ""
+    },
+    {
+        "id": "parameters_2_swin",
+        "dataset": "CIFAR100",
+        "augment": true,
+
+        "model": "Swin_T",
+        "pretrained": true,
+        "optimizer": "Adam",
+        "loss_f": "cross_entropy",
+
+        "batch_size": 32,
+        "lr_head": 0.001,
+        "train_backbone": false,
+        "lr_backbone": 0.0001,
+        "step_size": 5,
+        "gamma": 0.316,
+        "weight_decay": 0.001,  
+
+        "epochs": 15,
+        "num_classes": 100,
+        "hidden_dim": 4096,
+
+        "save_dir": "swin/parameters_2",
+        "load_dir": ""
+    },
+    {
+        "id": "parameters_2_res",
+        "dataset": "CIFAR100",
+        "augment": true,
+
+        "model": "ResNet34",
+        "pretrained": true,
+        "optimizer": "Adam",
+        "loss_f": "cross_entropy",
+
+        "batch_size": 32,
+        "lr_head": 0.001,
+        "train_backbone": false,
+        "lr_backbone": 0.0001,
+        "step_size": 5,
+        "gamma": 0.316,
+        "weight_decay": 0.001,  
+
+        "epochs": 15,
+        "num_classes": 100,
+        "hidden_dim": 4096,
+
+        "save_dir": "res/parameters_2",
+        "load_dir": ""
+    },
+    {
+        "id": "parameters_3_swin",
+        "dataset": "CIFAR100",
+        "augment": true,
+
+        "model": "Swin_T",
+        "pretrained": true,
+        "optimizer": "Adam",
+        "loss_f": "cross_entropy",
+
+        "batch_size": 32,
+        "lr_head": 0.01,
+        "train_backbone": false,
+        "lr_backbone": 0.00001,
+        "step_size": 5,
+        "gamma": 0.316,
+        "weight_decay": 0.001,  
+
+        "epochs": 15,
+        "num_classes": 100,
+        "hidden_dim": 4096,
+
+        "save_dir": "swin/parameters_3",
+        "load_dir": ""
+    },
+    {
+        "id": "parameters_3_res",
+        "dataset": "CIFAR100",
+        "augment": true,
+
+        "model": "ResNet34",
+        "pretrained": true,
+        "optimizer": "Adam",
+        "loss_f": "cross_entropy",
+
+        "batch_size": 32,
+        "lr_head": 0.001,
+        "train_backbone": false,
+        "lr_backbone": 0.00001,
+        "step_size": 5,
+        "gamma": 0.316,
+        "weight_decay": 0.001,  
+
+        "epochs": 10,
+        "num_classes": 100,
+        "hidden_dim": 4096,
+
+        "save_dir": "res/parameters_3",
+        "load_dir": ""
+    }
+]
